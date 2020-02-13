@@ -1,0 +1,9 @@
+@import '@scss/reset';
+
+.app {
+  margin: 0;
+  padding: 0;
+  background-color: $red;
+  text-align: center;
+  @include mixin-test($blue);
+}
