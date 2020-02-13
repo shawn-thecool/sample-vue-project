@@ -6,7 +6,8 @@ module.exports = {
       alias: {
         '@': path.resolve('src/'),
         '@scss': path.resolve('src/assets/scss/'),
-        '@utils': path.resolve('src/utils/')
+        '@mixins': path.resolve('src/components/mixins/'),
+        '@pages': path.resolve('src/components/pages/')
       }
     }
   },

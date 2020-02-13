@@ -1,18 +1,18 @@
 const toggle = {
   data() {
     return {
-      _isShow: false
+      m_isShow: false
     }
   },
   methods: {
-    _toggle() {
-      this._isShow = !this._isShow
+    m_toggle() {
+      this.m_isShow = !this.m_isShow
     },
-    _show() {
-      this._isShow = true
+    m_open() {
+      this.m_isShow = true
     },
-    _close() {
-      this._isShow = false
+    m_close() {
+      this.m_isShow = false
     }
   }
 }
