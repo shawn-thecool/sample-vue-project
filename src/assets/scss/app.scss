@@ -1,8 +1,6 @@
 @import '@scss/reset';
 
 .app {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  position: relative;
   @include mixin-test($blue);
 }

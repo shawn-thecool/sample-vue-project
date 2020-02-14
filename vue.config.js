@@ -7,8 +7,10 @@ module.exports = {
         '@': path.resolve('src/'),
         '@scss': path.resolve('src/assets/scss/'),
         '@comp': path.resolve('src/components/'),
+        '@const': path.resolve('src/constants/'),
         '@mixins': path.resolve('src/components/mixins/'),
-        '@pages': path.resolve('src/components/pages/')
+        '@pages': path.resolve('src/components/pages/'),
+        '@store' : path.resolve('src/store/')
       }
     }
   },
