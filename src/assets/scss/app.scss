@@ -1,6 +1,0 @@
-@import '@scss/reset';
-
-.app {
-  position: relative;
-  @include mixin-test($blue);
-}
