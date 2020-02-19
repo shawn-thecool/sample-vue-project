@@ -2,9 +2,9 @@ import makeRequest from '@api'
 
 const _parsePopups = dataList =>
   dataList.map(({ title, content, date }) => ({
-    header: { title },
-    body: { content },
-    footer: { date }
+    header: title ? { title } : null,
+    body: content ? { content } : null,
+    footer: date ? { date } : null
   }))
 
 export const getPopups = () => {
