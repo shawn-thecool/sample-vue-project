@@ -1,12 +1,20 @@
 <template>
   <div>
     <h2>index page</h2>
-    <button type="button" @click="onClick">popup open</button>
+    <div>
+      <strong>popup test</strong>
+      <button type="button" @click="onClick">popup open</button>
+    </div>
+    <div>
+      <strong>d3 test</strong>
+      <heatmap></heatmap>
+    </div>
   </div>
 </template>
 
 <script>
 import { getPopups } from '@api/v1/popup.test.js'
+import Heatmap from '@comp/dataviz/Heatmap'
 import { createNamespacedHelpers } from 'vuex'
 const { mapMutations } = createNamespacedHelpers('popup')
 
@@ -21,6 +29,9 @@ export default {
         this.addPopup(popups[2])
       })
     }
+  },
+  components: {
+    Heatmap
   }
 }
 </script>
